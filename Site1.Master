@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="School_Database_by_UI.Site1" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Rainbow School Management</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+        <div class="container">
+            <div class="header">
+                <h1 class="text-center">Rainbow School Management</h1>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="~/Default.aspx">Home</a></li>
+                    <li><a href="~/StudentManagement.aspx">Student Management</a></li>
+                    <!-- Add more navigation links as needed -->
+                </ul>
+            </div>
+            <div class="main">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
